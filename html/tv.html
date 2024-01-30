@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TV</title>
+
+    
+    <link rel="stylesheet" href="../css/style_btn.css">
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="../css/style_navbar.css">
+    <link rel="stylesheet" href="../css/style_section.css">
+    <script src="../js/szinvalaszto.js" defer></script>
+    <script src="../js/scroll-to-top.js" defer></script>
+    <script src="../js/addtocart.js" defer></script>
+   
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand&display=swap');</style>
+    <style>.section_div .section_picture_div_left img{ width: 300%; height: 120%;}</style>
+    
+</head>
+
+<body style="background: #6100fdea; background-position: center; background-repeat: no-repeat; font-family: 'Poppins', sans-serif;">
+    <div class="navbar_menu_div">      
+        <nav>
+            <img src="../img/Tech-shop-logo-design-premium-vector-PNG.png" class="techshop_logo_nav" style="border-radius: 20px;" width="100" height="100"> 
+            <ul class="links_nav">
+                <li><a class="link_a active" href="mainpage.html">Kezdőlap</a></li>
+                <li><a class="link_a" href="monitorok.html">Monitor</a></li>
+                <li><a class="link_a" href="tv.html">TV</a></li>
+                <li><a class="link_a" href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+            <a href="register.html"><button id="btn">Bejelentkezés</button></a>
+        </nav>       
+    </div>
+    <header class="main_container_header">
+        <div>
+            <h1 class="title_header_h1">
+                <span class="title_header_span">TV-k</span>  
+            </h1>
+            <p id="introduction_header_p">
+                Válogasson a legjobb televízióink közül. Mindenféle televízióink vannak, különböző felbontásokkal illetve panelekkel. Biztosítjuk a legszebb színvilágokat, képeket, filmeket a hihetetlenül gyönyörű paneljeinkel.
+            </p>
+        </div>     
+    </header>
+    <section class="main_container_section">
+        <div>
+            <h1 class="section_title_h1">Kiemelt termékeink</h1>
+            <table>
+                <tr>
+                  <td><img src="../img/samsungtv.jpg" style="border-radius: 0;width: 90%;height: 70%;"></td>
+                  <td>
+                    <h3>Samsung S90C OLED</h3>
+                    <ul>
+                        <li>OLED kijelző</li>
+                        <li>QD-OLED típusú</li>
+                        <li>4K felbontás</li>
+                        <li>55" 65" 77" 83" kijelző</li>
+                    </ul>
+                    <button type="button" class="shopping-monitorbtn" onclick="shoppingClick1(); displayPurchaseConfirmation(1)">Vásárlás</button>
+                    <p id="btn_shoppingClick_1"></p>
+                  </td>
+                </tr>
+                <tr>
+                    <td><img src="../img/sonytv1.jpg" style="border-radius: 0;width: 90%;height: 70%;"></td>
+                    <td>
+                      <h3>Sony A95L OLED</h3>
+                      <ul>
+                        <li>OLED kijelző</li>
+                        <li>QD-OLED típusú</li>
+                        <li>4K felbontás</li>
+                        <li>55" 65" 77" kijelző</li>
+                      </ul>
+                    <button type="button" class="shopping-monitorbtn" onclick="shoppingClick2(); displayPurchaseConfirmation(2)">Vásárlás</button>
+                    <p id="btn_shoppingClick_2"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="../img/sonytv2.jpg" style="border-radius: 0;width: 90%;height: 70%;"></td>
+                    <td>
+                      <h3>Sony X93L/X93CL</h3>
+                      <ul>
+                        <li>LED kijelző</li>
+                        <li>VA típusú</li>
+                        <li>4K felbontás</li>
+                        <li>65" 75" 85" kijelző</li>
+                      </ul>
+                    <button type="button" class="shopping-monitorbtn" onclick="shoppingClick3(); displayPurchaseConfirmation(3)">Vásárlás</button>
+                    <p id="btn_shoppingClick_3"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="../img/lgtv.jpg" style="border-radius: 0;width: 90%;height: 70%;"></td>
+                    <td>
+                      <h3>LG C3 OLED</h3>
+                      <ul>
+                        <li>OLED kijelző</li>
+                        <li>WOLED típusú</li>
+                        <li>4K felbontás</li>
+                        <li>42" 48" 55" 65" 77" 83" kijelző</li>
+                      </ul>
+                      <button type="button" class="shopping-monitorbtn" onclick="shoppingClick4(); displayPurchaseConfirmation(4)">Vásárlás</button>
+                      <p id="btn_shoppingClick_4"></p>
+                    </td>
+                  </tr>
+              </table>
+        </div>
+    </section>
+    <div class="scroll-to-top" onclick="scrollToTop()">🡩</div>
+
+    <div id="colorSelector" onclick="toggleColorPicker()">
+        🌙
+    </div>
+    
+    <div id="colorPicker">
+        <select onchange="changeBackgroundColor(this.value)">
+          <option value="#6100fdea">alap</option>
+          <option value="#555555ea">sötétszürke</option>
+          <option value="darkRed">vörös</option>
+        </select>
+    </div>
+</body>
+</html>

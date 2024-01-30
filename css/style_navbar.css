@@ -1,0 +1,45 @@
+nav{
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+ }
+ 
+ .techshop_logo_nav{
+    max-width: 250px;
+ }
+ 
+ .links_nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+ }
+ 
+.link_a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.link_a::after{
+   content: "";
+   position: absolute;
+   height: 2px;
+   width: 0;
+   bottom: 0;
+   left: 0;
+   background-color: whitesmoke;
+   transition: all 0.5s ease;
+}
+
+.link_a:hover:after{
+   width: 100%;
+}
+
+.link_a.active {
+   font-weight: bold;
+}

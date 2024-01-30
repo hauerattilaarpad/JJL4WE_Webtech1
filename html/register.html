@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tech shop</title>
+    <link rel="stylesheet" href="../css/style_navbar.css">
+    <link rel="stylesheet" href="../css/style_sign_in_up_style.css">
+    <link rel="stylesheet" href="../css/style_btn.css">
+    <link rel="stylesheet" href="../css/style_header.css">
+    
+    <link rel="stylesheet" href="../css/style_section.css">
+    <script src="../js/registerscript.js" defer></script>
+    <script src="../js/szinvalaszto.js" defer></script>
+    <script src="../js/checker.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand&display=swap');</style>
+    <style>.section_div .section_picture_div_left img{ width: 300%; height: 120%;}</style>
+    
+</head>
+
+<body style="background: #6100fdea; background-position: center; background-repeat: no-repeat; font-family: 'Poppins', sans-serif;">
+    <div class="navbar_menu_div">      
+        <nav>
+            <img src="../img/Tech-shop-logo-design-premium-vector-PNG.png" class="techshop_logo_nav" style="border-radius: 20px;" width="100" height="100"> 
+            <ul class="links_nav">
+                <li><a class="link_a active" href="mainpage.html">Kezdőlap</a></li>
+                <li><a class="link_a" href="monitorok.html">Monitor</a></li>
+                <li><a class="link_a" href="tv.html">TV</a></li>
+                <li><a class="link_a" href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+            <a href="register.html"><button id="btn">Bejelentkezés</button></a>
+        </nav>       
+    </div>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Fiók készítése</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>vagy használd az emailod a regisztráláshoz</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="date" id="dateInput" placeholder="éééé/hh/nn">
+                <label for="passw">Válasszon nemet:</label>
+                <div class="gender-options">
+                    <div style="display: inline-block">
+                        <input type="radio" id="male" name="select_gender" value="Férfi">
+                        <label class="radio-label" for="male">Férfi</label>
+                    </div>
+                    <div style="display: inline-block">
+                        <input type="radio" id="female" name="select_gender" value="Nő">
+                        <label class="radio-label" for="female">Nő</label>
+                    </div>
+                </div>
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Bejelentkezés</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>vagy használd az emailod és jelszavad</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Elfelejtetted a jelszavad?</a>
+                <button>Bejelentkezés</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Köszöntünk ismét!</h1>
+                    <p>Írd be a személyes adataidat az oldal használatához!</p>
+                    <button class="hidden" id="login">Bejelentkezés</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Üdvözöljük!</h1>
+                    <p>Regisztálj a személyes adataiddal az oldal használatához!</p>
+                    <button class="hidden" id="register">Fiók készítése</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="colorSelector" onclick="toggleColorPicker()">
+        🌙
+      </div>
+    
+      <div id="colorPicker">
+        <select onchange="changeBackgroundColor(this.value)">
+          <option value="#6100fdea">alap</option>
+          <option value="#555555ea">sötétszürke</option>
+          <option value="darkRed">vörös</option>
+        </select>
+      </div>
+    </div>
+</body>
+
+</html>

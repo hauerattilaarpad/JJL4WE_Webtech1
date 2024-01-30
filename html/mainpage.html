@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tech shop kezdőlap</title>
+
+    
+    <link rel="stylesheet" href="../css/style_btn.css">
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="../css/style_navbar.css">
+    <link rel="stylesheet" href="../css/style_section.css">
+    <script src="../js/szinvalaszto.js" defer></script>
+    <script src="../js/scroll-to-top.js" defer></script>
+   
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand&display=swap');</style>
+    <style>.section_div .section_picture_div_left img{ width: 300%; height: 120%;}</style>
+    
+</head>
+
+<body style="background: #6100fdea; background-position: center; background-repeat: no-repeat; font-family: 'Poppins', sans-serif;">
+    <div class="navbar_menu_div">      
+        <nav>
+            <img src="../img/Tech-shop-logo-design-premium-vector-PNG.png" class="techshop_logo_nav" style="border-radius: 20px;" width="100" height="100"> 
+            <ul class="links_nav">
+                <li><a class="link_a active" href="mainpage.html">Kezdőlap</a></li>
+                <li><a class="link_a" href="monitorok.html">Monitor</a></li>
+                <li><a class="link_a" href="tv.html">TV</a></li>
+                <li><a class="link_a" href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+            <a href="register.html"><button id="btn">Bejelentkezés</button></a>
+        </nav>       
+    </div>
+    <header class="main_container_header">
+        <div>
+            <h1 class="title_header_h1">Üdvözöljük Önöket a <span class="title_header_span">Tech Shop</span> weboldalán!</h1>
+            <p id="introduction_header_p">Szeret filmezni vagy esetleg játszani!? Jó helyen jár. Cégünk csúcsminőségú legfejlettebb monitorok, illetve tévék értékesítésével foglalkozik megfizethető áron.</p>
+        </div>     
+    </header>
+    <h1 class="title_header_h1">
+        <span>Miért minket válasszon?</span>             
+    </h1> 
+    <section class="main_container_section">
+        <div class="section_div">
+            <div class="section_picture_div_left">
+                <img src="../img/kezdolapmonitor.jpg">
+            </div>
+            <div class="section_text_right">
+                <div class="section_title_right">
+                    <h2>Széles választék</h2>
+                </div>
+                <div class="section_content">
+                    <p>Weboldalunkon hatalmas kollekcióból válogathatnak, a csúcsszuper monitorjaink illetve TV-k közül!</p>
+                </div>                   
+            </div> 
+        </div>
+    </section>
+    <section class="main_container_section">
+        <div class="section_div">
+            <div class="section_picture_div_left">
+                <img src="../img/kezdolaptv.jpg">
+            </div>
+            <div class="section_text_right">
+                <div class="section_title_right">
+                    <h2>Minőség</h2>
+                </div>
+                <div class="section_content">
+                    <p>Csak megbízható gyártók termékeit kínáljuk, így garantáljuk önöknek a legjobb élményeket.</p>
+                </div>                   
+            </div> 
+        </div>
+    </section>
+    <section class="main_container_section">
+        <div class="section_div">
+            <div class="section_picture_div_left">
+                <img src="../img/törötttv.jpg">
+            </div>
+            <div class="section_text_right">
+                <div class="section_title_right">
+                    <h2>Biztonságos szállítás</h2>
+                </div>
+                <div class="section_content">
+                    <p>Tudjuk, hogy nincs is frusztrálóbb attól amikor a termék sérülten érkezik, így cégünk különös figyelmet fordít hogy éppségben érkezzen meg a termék ne pedig úgy ahogy más cégeknél!.</p>
+                </div>                   
+            </div> 
+        </div>
+    </section> 
+
+    <div class="scroll-to-top" onclick="scrollToTop()">🡩</div>
+
+    <div id="colorSelector" onclick="toggleColorPicker()">
+        🌙
+      </div>
+    
+      <div id="colorPicker">
+        <select onchange="changeBackgroundColor(this.value)">
+          <option value="#6100fdea">alap</option>
+          <option value="#555555ea">sötétszürke</option>
+          <option value="darkRed">vörös</option>
+        </select>
+      </div>
+    
+ 
+</body>
+</html>

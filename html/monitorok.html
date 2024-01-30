@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>monitor</title>
+
+    
+    <link rel="stylesheet" href="../css/style_btn.css">
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="../css/style_navbar.css">
+    <link rel="stylesheet" href="../css/style_section.css">
+    <script src="../js/szinvalaszto.js" defer></script>
+    <script src="../js/scroll-to-top.js" defer></script>
+    <script src="../js/addtocart.js" defer></script>
+   
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand&display=swap');</style>
+    <style>.section_div .section_picture_div_left img{ width: 300%; height: 120%;}</style>
+    
+</head>
+
+<body style="background: #6100fdea; background-position: center; background-repeat: no-repeat; font-family: 'Poppins', sans-serif;">
+    <div class="navbar_menu_div">      
+        <nav>
+            <img src="../img/Tech-shop-logo-design-premium-vector-PNG.png" class="techshop_logo_nav" style="border-radius: 20px;" width="100" height="100"> 
+            <ul class="links_nav">
+                <li><a class="link_a active" href="mainpage.html">Kezdőlap</a></li>
+                <li><a class="link_a" href="monitorok.html">Monitor</a></li>
+                <li><a class="link_a" href="tv.html">TV</a></li>
+                <li><a class="link_a" href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+            <a href="register.html"><button id="btn">Bejelentkezés</button></a>
+        </nav>       
+    </div>
+    <header class="main_container_header">
+        <div>
+            <h1 class="title_header_h1">
+                <span class="title_header_span">Monitorjaink</span>  
+            </h1>
+            <p id="introduction_header_p">
+                Válogasson a legjobb monitorjaink közül. Mindenféle monitorjaink vannak, különböző képfrissítésekkel illetve panelekkel. Nálunk mindent megtalál legyen szó 144 vagy akár 300hz feletti képfrissítéssel rendelkező monitort. A lehető legkissebb kését garantáljuk hogy minél nagyobb előnye legyen az ellenfeleivel szemben. Emellett biztosítjuk a legszebb színvilágokat is a hihetetlen IPS,VA,TN,OLED paneljeinkel.
+            </p>
+        </div>     
+    </header>
+    <section class="main_container_section">
+        <div>
+            <h1 class="section_title_h1">Kiemelt termékeink</h1>
+            <table>
+                <tr>
+                  <td><img src="../img/dellalienware.jpg" style="border-radius: 0;width: 90%;height: 70%;"></td>
+                  <td>
+                    <h3>Dell Alienware AW3423DW</h3>
+                    <ul>
+                        <li>175hz képfrissítés</li>
+                        <li>QD-OLED kijelző</li>
+                        <li>3440 x 1440 felbontás</li>
+                        <li>34-es kijelző</li>
+                        <li>HDR10 támogatottság</li>
+                        <li>1ms válaszidő</li>
+                    </ul>
+                    <button type="button" class="shopping-monitorbtn" onclick="shoppingClick1(); displayPurchaseConfirmation(1)">Vásárlás</button>
+                    <p id="btn_shoppingClick_1"></p>
+                  </td>
+                </tr>
+                <tr>
+                    <td><img src="../img/rogmonitor.jpg" style="border-radius: 0;width: 90%;height: 70%;"></td>
+                    <td>
+                      <h3>ASUS ROG Swift OLED PG27AQDM</h3>
+                      <ul>
+                        <li>240hz képfrissítés</li>
+                        <li>OLED kijelző</li>
+                        <li>2560 x 1440 felbontás</li>
+                        <li>27-es kijelző</li>
+                        <li>HDR10 támogatottság</li>
+                        <li>1ms válaszidő</li>
+                      </ul>
+                    <button type="button" class="shopping-monitorbtn" onclick="shoppingClick2(); displayPurchaseConfirmation(2)">Vásárlás</button>
+                    <p id="btn_shoppingClick_2"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="../img/gigabytemontior.jpg" style="border-radius: 0;width: 90%;height: 70%;"></td>
+                    <td>
+                      <h3>Gigabyte M27U</h3>
+                      <ul>
+                        <li>160hz képfrissítés</li>
+                        <li>IPS kijelző</li>
+                        <li>3840 x 2160 felbontás</li>
+                        <li>27-es kijelző</li>
+                        <li>HDR10 támogatottság</li>
+                        <li>1ms válaszidő</li>
+                      </ul>
+                    <button type="button" class="shopping-monitorbtn" onclick="shoppingClick3(); displayPurchaseConfirmation(3)">Vásárlás</button>
+                    <p id="btn_shoppingClick_3"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="../img/LGmonitor.jpg" style="border-radius: 0;width: 90%;height: 70%;"></td>
+                    <td>
+                      <h3>LG 27GP850-B/27GP83B-B</h3>
+                      <ul>
+                        <li>180hz képfrissítés</li>
+                        <li>IPS kijelző</li>
+                        <li>2560 x 1440 felbontás</li>
+                        <li>27-es kijelző</li>
+                        <li>HDR10 támogatottság</li>
+                        <li>1ms válaszidő</li>
+                      </ul>
+                      <button type="button" class="shopping-monitorbtn" onclick="shoppingClick4(); displayPurchaseConfirmation(4)">Vásárlás</button>
+                      <p id="btn_shoppingClick_4"></p>
+                    </td>
+                  </tr>
+              </table>
+        </div>
+    </section>
+    <div class="scroll-to-top" onclick="scrollToTop()">🡩</div>
+
+    <div id="colorSelector" onclick="toggleColorPicker()">
+        🌙
+    </div>
+    
+    <div id="colorPicker">
+        <select onchange="changeBackgroundColor(this.value)">
+          <option value="#6100fdea">alap</option>
+          <option value="#555555ea">sötétszürke</option>
+          <option value="darkRed">vörös</option>
+        </select>
+    </div>
+</body>
+</html>
